@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/light_grey">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="CALCULADORA\nDE CONVERSIÓN"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +29,9 @@
         android:layout_marginTop="35sp"
         android:layout_marginHorizontal="50sp"
         android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:popupBackground="@color/grey"
+        android:theme=""
         />
 
     <EditText
@@ -37,8 +41,8 @@
         android:backgroundTint="@color/grey"
         android:hint="Inserte un valor"
         android:textAlignment="center"
-        android:textColorHint="@color/grey"
-        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinnerTipoConversion"
         android:layout_marginTop="25dp"
@@ -54,8 +58,8 @@
         android:backgroundTint="@color/grey"
         android:hint="Inserte un valor"
         android:textAlignment="center"
-        android:textColorHint="@color/grey"
-        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinnerTipoConversion"
         android:layout_marginTop="25dp"
@@ -73,6 +77,8 @@
         android:layout_marginTop="20sp"
         android:layout_marginHorizontal="25sp"
         android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:popupBackground="@color/grey"
         />
 
     <Spinner
@@ -84,6 +90,8 @@
         android:layout_marginTop="20sp"
         android:layout_marginHorizontal="25sp"
         android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:popupBackground="@color/grey"
         />
 
 
@@ -98,7 +106,6 @@
         app:layout_constraintWidth_default="spread"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="10dp"
         >
 
         <Button
